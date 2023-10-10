@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+.container{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.main{
+    background-color: whitesmoke;
+    /* width: 80vw; */
+    justify-content: center;
+    align-items: center;
+    /* border: solid 4px yellow; */
+}
+.background{
+    background-image: url(./css-challenge/images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 30px;
+}
+.top-bgnd{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    color: white;
+
+}
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding-left: 40px;
+}
+.login{
+    display: flex;
+}
+.reg{
+    width: 180px;
+    height: 30px;
+    background-color:rgb(12, 135, 201);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-left: 20px;
+}
+.log{
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+}
+.centre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px;
+    text-align: center;
+    padding: 50px;
+    word-spacing: 5px;
+}
+.top > h1{
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.others{
+    margin-top: 80px;
+}
+.quote{
+    border-radius:20px;
+    background-color: rgb(12, 135, 201);
+    width: 120px;
+    color: white;
+    border: none;
+    height: 30px;
+    margin-right: 40px;
+}
+.learn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border:solid 1px white;
+    border-radius:20px ;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    /* align-items: flex-start; */
+}
+.card{
+    background-color: white;
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.satis{
+    background-color: rgb(12, 135, 201);
+    color: white;
+}
+.satis>ion-icon{
+    color: white;
+}
+.peace, .set, .satis{
+    margin-top: -5rem;
+    box-shadow: 0 4px 5px -2px gray;
+    text-align: justify;
+}
+ion-icon{
+    color: rgb(12, 135, 201);
+    font-size: 30px;
+
+
+}
+.industry{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    gap: 50px;
+    margin: 80px;
+}
+.head{
+    text-align: center;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.image{
+    /* display: flex; */
+    padding: 30px;
+    /* border: 3px solid greenyellow; */
+    text-align: center;
+    background-color: white;
+}
+.bottom > img{
+    width: 70px;
+}
+.subscription{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: orange; */
+    padding: 70px;
+}
+.toprice{
+    text-align: center;
+}
+.low{
+    padding: 30px;
+    display: flex;
+}
+.low>.card{
+    border: 1px solid rgb(12, 135, 201);
+    border-radius: 3px;
+    height: 300px;
+}
+.maps{
+    display: flex;
+    background-color: navy;
+    align-items: center;
+
+}
+.foot{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    border: 5px solid yellow;
+    /* height: 400px; */
+    /* background-color: blueviolet; */
+}
+.appointment{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.appointment>.img{
+    /* width: 25%; */
+}
