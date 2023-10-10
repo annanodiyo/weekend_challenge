@@ -165,8 +165,8 @@ ion-icon{
     text-align: center;
     background-color: white;
 }
-.bottom > img{
-    width: 70px;
+.bottom > .img{
+    /* width: 70px; */
 }
 .subscription{
     display: flex;
@@ -186,34 +186,71 @@ ion-icon{
     text-align: center;
 }
 .low{
-    padding: 30px;
+    padding: 50px;
     display: flex;
+    width: 60%;
+    /* margin: 40px; */
 }
 .low>.card{
     border: 1px solid rgb(12, 135, 201);
     border-radius: 3px;
-    height: 300px;
+    height: 60vh;
+    font-size: medium;
+}
+.low > .std{
+    margin-top: -40px;
+    height: 66vh;
+    color: white;
+    background-color: rgb(1, 1, 34);
+
 }
 .maps{
     display: flex;
-    background-color: navy;
+    background-color: rgb(13, 13, 38);
     align-items: center;
+    color: white;
+    justify-content: center;
+    gap: 80px;
+    max-height: 80%;
+    padding: 100px;
+}
+.branch{
+    text-align:right;
+}
+.loc{
+    /* padding: 80px; */
+    display: flex;
+    justify-self: flex-end;
 
 }
 .foot{
     display: flex;
-    /* flex-direction: row; */
+    /* grid-template-areas: ; */
+
+    flex-direction: row;
     justify-content: center;
     border: 5px solid yellow;
     /* height: 400px; */
     /* background-color: blueviolet; */
 }
 .appointment{
-    width: 100%;
-    display:flex;
+    background-color: blueviolet;
+    display: flex;
     flex-direction: row;
+    /* max-height: 80vh; */
+    /* display:grid; */
     padding: 30px;
+    /* grid-template-areas:
+    "img contact contact"
+    "img contact contact"
+    ; */
 }
 .appointment>.img{
-    /* width: 25%; */
+    /* width: 25px; */
+    /* grid-area: img; */
+    border: 3px solid goldenrod;
+}
+.contact{
+    /* grid-area: contact; */
+    border: 3px solid rgb(32, 94, 218);
 }
