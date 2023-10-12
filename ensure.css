@@ -109,6 +109,8 @@ li{
     gap: 100px;
     flex-wrap: wrap;
     padding-left: 70px;
+    width: 80%;
+    margin: auto;
     /* align-items: flex-start; */
 }
 .card{
@@ -122,14 +124,21 @@ li{
     padding: 30px;
     font-size: 15px;
 }
+.card:hover{
+    background-color:rgb(12, 135, 201);
+    color: white;
+}
+ion-icon:hover{
+    color: white;
+}
 
-.satis{
+/* .satis{
     background-color: rgb(12, 135, 201);
     color: white;
 }
 .satis>ion-icon{
     color: white;
-}
+} */
 .peace, .set, .satis{
     margin-top: -5rem;
     box-shadow: 0 4px 5px -2px gray;
@@ -150,6 +159,9 @@ ion-icon{
     gap: 50px;
     margin: 80px;
 }
+.stars>ion-icons{
+    color: orange;
+}
 .head{
     text-align: center;
 }
@@ -165,14 +177,18 @@ ion-icon{
     text-align: center;
     background-color: white;
 }
-.bottom > .img{
-    /* width: 70px; */
-}
 .subscription{
     display: flex;
     padding: 15px;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 70px;
+    align-self: center;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(148,54,159,1) 31%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 100%);
+    width: 80%;
+    height: 30px;
+    color: white;
+    padding: 20px;
+
 }
 .prices{
     display: flex;
@@ -207,20 +223,26 @@ ion-icon{
 .maps{
     display: flex;
     background-color: rgb(13, 13, 38);
-    align-items: center;
+    /* align-items: center; */
     color: white;
-    justify-content: center;
-    gap: 80px;
-    max-height: 80%;
-    padding: 100px;
+    justify-content: space-around;
+    /* align-items: space-around; */
+    gap: 40px;
+    height: 60vh;
+    /* padding: 100px; */
+    border:2px solid red;
 }
 .branch{
     text-align:right;
+    border: 2px solid green;
+    height: 30%;
 }
 .loc{
     /* padding: 80px; */
     display: flex;
     justify-self: flex-end;
+    border: 2px solid yellow;
+    height: 30%;
 
 }
 .foot{
@@ -233,12 +255,17 @@ ion-icon{
 }
 .form{
     display: flex;
+    /* flex-direction: column; */
     width: 800px;
     /* align-self: center; */
     margin-top: -10rem;
+    /* border: 2px solid orange; */
+    background-color: white;
+
 }
 .form>.pic{
     width: 30%;
+    /* border: 3px solid blue; */
 }
 .form>.pic>img{
     width: 200px;
@@ -247,8 +274,21 @@ ion-icon{
 .contact{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 50px;
+    /* border: solid 3px green; */
+    width: 70%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#full-name, #email, #department, #book-btn{
+    height: 2rem;
+}
+#book-btn{
+    color: white;
+    background-color: blue;
 }
 .consult{
     display: flex;
@@ -268,31 +308,71 @@ ion-icon{
     display: flex;
     flex-direction: row;
 }
-@media screen and (min-width:450px){
+@media screen and (max-width:412px){
     *{
-       font-size: small;
+        font-size: 10px;
     }
-
     .background{
-        background-image: url(./css-challenge/images/hero.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        /* padding: 30px; */
-    }
-    .top-bgnd{
-        display: flex;
-        /* max-width: 1200px; */
-        margin: auto;
-        justify-content: space-between;
-        color: white;
-
+        padding: 10px;
     }
     .nav{
         display: flex;
-        align-items: start;
-        /* justify-content: space-between; */
-        gap: 10px;
+        flex-direction: row;
+
     }
+    .reg{
+        width: 80px;
+        /* height: 30px; */
+        background-color:rgb(12, 135, 201);
+        border: none;
+        border-radius: 3px;
+        color: white;
+
+        /* margin-left: 20px; */
+    }
+    .top>h1{
+        font-size: 10px;
+    }
+
+    li{
+       font-size: 10px;
+        padding-left: 2px;
+
+    }
+    .top-bgnd{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: nowrap;
+        padding-left: 20px;
+    }
+    .card{
+        background-color: white;
+        width: 100px;
+        /* height: 40px; */
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .peace, .set, .satis{
+        margin-top: 0;
+        box-shadow: 0 4px 5px -2px gray;
+        text-align: justify;
+    }
+   /* .login{
+        display: flex;
+        flex-direction: column;
+} */
 }
